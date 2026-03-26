@@ -11,7 +11,7 @@
 
 No paid APIs. No complex setup. 100% open-source, free-tier LLMs.
 
-[Live Demo on HuggingFace Spaces](#) · [Report a Bug](../../issues) · [Request a Feature](../../issues)
+[🤗 Live Demo on HuggingFace Spaces](https://huggingface.co/spaces/mhamzakhalid22/RAGify) · [Report a Bug](../../issues) · [Request a Feature](../../issues)
 
 </div>
 
