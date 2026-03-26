@@ -1,0 +1,253 @@
+/* ══════════════════════════════════════════
+   RAG Chatbot Builder — Custom Styles
+   ══════════════════════════════════════════ */
+
+:root {
+  --brand-primary: #7C3AED;   /* violet-600 */
+  --brand-secondary: #4F46E5; /* indigo-600 */
+  --brand-accent: #06B6D4;    /* cyan-500   */
+  --brand-success: #10B981;   /* emerald-500*/
+  --bg-dark: #0F0F14;
+  --bg-card: #1A1A2E;
+  --bg-input: #16213E;
+  --text-primary: #F1F5F9;
+  --text-muted: #94A3B8;
+  --border-color: #334155;
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+/* ── Root & Body ── */
+.gradio-container {
+  background: var(--bg-dark) !important;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+/* ── Header Banner ── */
+.header-banner {
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary), var(--brand-accent));
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+.header-banner h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0 0 0.4rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.header-banner p {
+  color: rgba(255,255,255,0.85);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* ── Upload Zone ── */
+.upload-zone {
+  border: 2px dashed var(--brand-primary) !important;
+  background: rgba(124,58,237,0.05) !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
+}
+.upload-zone:hover {
+  border-color: var(--brand-accent) !important;
+  background: rgba(6,182,212,0.08) !important;
+}
+
+/* ── Buttons ── */
+button.primary-btn, .gr-button.primary {
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary)) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  padding: 0.75rem 2rem !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 15px rgba(124,58,237,0.4) !important;
+  transition: all 0.3s ease !important;
+  width: 100% !important;
+}
+button.primary-btn:hover, .gr-button.primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(124,58,237,0.6) !important;
+}
+
+/* ── Progress / Status ── */
+.status-box {
+  background: var(--bg-input);
+  border: 1px solid var(--brand-accent);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  color: var(--brand-accent);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+}
+
+/* ── Chat Interface ── */
+.chat-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.2rem;
+  height: 75vh;
+}
+.chat-sidebar {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.sidebar-title {
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.sidebar-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(51,65,85,0.5);
+}
+.sidebar-stat .label { color: var(--text-muted); font-size: 0.82rem; }
+.sidebar-stat .value { color: var(--brand-accent); font-weight: 700; font-size: 0.88rem; }
+
+/* ── Chatbox Messages ── */
+.message.user {
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary)) !important;
+  color: white !important;
+  border-radius: 14px 14px 4px 14px !important;
+  max-width: 80% !important;
+  align-self: flex-end !important;
+  box-shadow: 0 4px 12px rgba(124,58,237,0.3) !important;
+}
+.message.bot {
+  background: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 14px 14px 14px 4px !important;
+  max-width: 85% !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+}
+
+/* ── Example Questions ── */
+.example-q-btn {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+  font-size: 0.82rem !important;
+  padding: 0.5rem 0.8rem !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  width: 100% !important;
+}
+.example-q-btn:hover {
+  border-color: var(--brand-primary) !important;
+  background: rgba(124,58,237,0.12) !important;
+  color: #c4b5fd !important;
+}
+
+/* ── Badge pills ── */
+.badge {
+  display: inline-block;
+  background: rgba(124,58,237,0.2);
+  color: #c4b5fd;
+  border: 1px solid rgba(124,58,237,0.4);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ── Textarea & inputs ── */
+textarea, input[type=text] {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 10px !important;
+  color: var(--text-primary) !important;
+  font-size: 0.9rem !important;
+  transition: border-color 0.2s !important;
+}
+textarea:focus, input[type=text]:focus {
+  border-color: var(--brand-primary) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(124,58,237,0.2) !important;
+}
+
+/* ── Loading spinner ── */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  display: inline-block;
+  width: 18px; height: 18px;
+  border: 3px solid rgba(124,58,237,0.3);
+  border-top-color: var(--brand-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--brand-primary); }
+
+/* ── Accordion ── */
+.gr-accordion {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 10px !important;
+}
+
+/* ── Markdown blocks ── */
+.gr-markdown { color: var(--text-primary) !important; }
+.gr-markdown h2, .gr-markdown h3 { color: #c4b5fd; }
+.gr-markdown code {
+  background: var(--bg-input);
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-size: 0.85em;
+  color: var(--brand-accent);
+}
+.gr-markdown table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.gr-markdown table th {
+  background: rgba(124,58,237,0.2);
+  color: #c4b5fd;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+.gr-markdown table td {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  color: var(--text-primary);
+}
