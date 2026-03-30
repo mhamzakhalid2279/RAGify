@@ -1,4 +1,4 @@
-# RAGify — requirements.txt
+# RAGlitheon — requirements.txt
 # Python 3.13 compatible
 # gradio is NOT listed here — HF Spaces installs it from sdk_version in README.md
 # Adding it here would cause version conflicts.
