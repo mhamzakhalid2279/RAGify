@@ -1,5 +1,5 @@
 """
-RAGify — Instant RAG Chatbot Builder  (single-file HuggingFace Spaces deployment)
+RAGlitheon — Instant RAG Chatbot Builder  (single-file HuggingFace Spaces deployment)
 ==================================================================================
 Full parity with:
   data_loader.py  ·  chunker.py  ·  embedder.py
@@ -827,7 +827,7 @@ textarea:focus, input[type=text]:focus {
 
 HEADER_HTML = """
 <div class="header-banner">
-  <h1>🤖 RAGify — Instant RAG Chatbot Builder</h1>
+  <h1>🤖 RAGlitheon — Instant RAG Chatbot Builder</h1>
   <p>Upload any database · Describe your chatbot · Start chatting — 100% free, open-source LLMs</p>
 </div>
 """
@@ -977,7 +977,7 @@ def reset_to_builder(pipeline_state):
 def create_app():
     with gr.Blocks(
         css=CSS,
-        title="RAGify — RAG Chatbot Builder",
+        title="RAGlitheon — RAG Chatbot Builder",
         theme=gr.themes.Base(primary_hue="violet", secondary_hue="indigo",
                              neutral_hue="slate"),
     ) as app:
@@ -1039,7 +1039,7 @@ def create_app():
                         value=[], height=480, show_label=False,
                         bubble_full_width=False, render_markdown=True,
                         type="messages",
-                        avatar_images=(None, "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=ragify"),
+                        avatar_images=(None, "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=RAGlitheon"),
                     )
                     with gr.Row():
                         chat_input = gr.Textbox(
