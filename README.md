@@ -4,7 +4,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.13+-blue?style=flat-square&logo=python)
 ![Gradio](https://img.shields.io/badge/Gradio-5.x-orange?style=flat-square&logo=gradio)
-![License](https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Spaces-yellow?style=flat-square&logo=huggingface)
 
 **Upload any database file → describe your chatbot's purpose → start chatting with your data instantly.**
@@ -242,12 +241,6 @@ top_k = 6   # chunks retrieved for lookup queries
 
 **Slow first response**
 → Normal — the embedding model (`all-MiniLM-L6-v2`, ~80 MB) loads on first use. Subsequent queries are fast.
-
----
-
-## 📄 License
-
-Licensed under the [Apache 2.0 License](LICENSE).
 
 ---
 
