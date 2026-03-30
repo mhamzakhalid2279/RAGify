@@ -1,4 +1,4 @@
-# 🤖 RAGify — Instant RAG Chatbot Builder
+# 🤖 RAGlitheon — Instant RAG Chatbot Builder
 
 <div align="center">
 
@@ -11,7 +11,7 @@
 
 No paid APIs. No complex setup. 100% open-source, free-tier LLMs.
 
-[🤗 Live Demo on HuggingFace Spaces](https://huggingface.co/spaces/mhamzakhalid22/RAGify) · [Report a Bug](../../issues) · [Request a Feature](../../issues)
+[🤗 Live Demo on HuggingFace Spaces](https://huggingface.co/spaces/mhamzakhalid22/RAGlitheon) · [Report a Bug](../../issues) · [Request a Feature](../../issues)
 
 </div>
 
@@ -21,7 +21,7 @@ No paid APIs. No complex setup. 100% open-source, free-tier LLMs.
 
 > Upload a file, describe your use case, and get a fully functional AI chatbot over your data in under 2 minutes.
 
-![RAGify Screenshot](assets/preview.png)
+![RAGlitheon Screenshot](assets/preview.png)
 
 ---
 
@@ -73,7 +73,7 @@ Gradio 5 Chat UI
 ## 📁 Project Structure
 
 ```
-ragify/
+RAGlitheon/
 ├── app.py              # Single-file deployment (all modules inlined — for HF Spaces)
 │
 ├── data_loader.py      # Universal file loader (CSV, Excel, JSON, JSONL)
@@ -99,8 +99,8 @@ ragify/
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/YOUR_USERNAME/ragify.git
-cd ragify
+git clone https://github.com/YOUR_USERNAME/RAGlitheon.git
+cd RAGlitheon
 ```
 
 **2. Install dependencies**
@@ -166,7 +166,7 @@ Then open `http://localhost:7860` in your browser.
 
 ## 🔧 Chunking Strategies
 
-RAGify automatically picks the best strategy based on your table's shape:
+RAGlitheon automatically picks the best strategy based on your table's shape:
 
 | Strategy | When Used | How It Works |
 |---|---|---|
@@ -180,7 +180,7 @@ You can also manually override the strategy in the **Advanced Settings** panel i
 
 ## 🤖 LLM Fallback Chain
 
-RAGify uses the HuggingFace Inference API (free tier) with automatic fallbacks:
+RAGlitheon uses the HuggingFace Inference API (free tier) with automatic fallbacks:
 
 ```
 1. mistralai/Mistral-7B-Instruct-v0.3   ← primary
